@@ -20,3 +20,30 @@ Assembler Agentは、Critic Agentの審査を通過したクリップ群をタ�
    - コーデック: H.264 (`libx264`), AAC (`aac`)
    - プリセット: `fast` または `medium`
    - Faststart フラグ（Web再生最適化）付与。
+
+---
+
+## 3. 実装インターフェース (`src/agents/assembler.py`)
+
+```python
+class AssemblerAgent:
+    def concatenate_clips(self, clip_paths: List[Path], output_path: Path, use_mock: bool = False) -> Path:
+        """複数クリップの高速・無劣化結合 (FFmpeg concat demuxer)"""
+        ...
+
+    def synthesize_narration(self, cuts: List[CutPlan], output_audio_path: Path, use_mock: bool = False) -> Path:
+        """各カットの原稿から音声合成とタイムアライメント"""
+        ...
+
+    def mix_audio_with_ducking(self, voice_audio_path: Path, bgm_path: Optional[Path], output_path: Path, use_mock: bool = False) -> Path:
+        """ナレーション発話区間に応じたBGM自動減衰ダッキング (-12dB)"""
+        ...
+
+    def render_telop_overlay(self, video_path: Path, cuts: List[CutPlan], output_path: Path, use_mock: bool = False) -> Path:
+        """セーフゾーンを考慮した動的テロップ描画"""
+        ...
+
+    def assemble_master_video(self, project_plan: ProjectPlan, clip_paths: List[Path], output_path: Optional[Path] = None, bgm_path: Optional[Path] = None, use_mock: bool = False) -> Path:
+        """全レイヤー統合レンダリング・マスター出力"""
+        ...
+```

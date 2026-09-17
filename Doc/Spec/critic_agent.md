@@ -25,3 +25,32 @@ Critic Agentは、生成された動画クリップからフレーム画像を�
    - 複雑すぎる描写を簡潔化し、モデルが破綻しにくい表現へ置換
 3. **シード値の変更**:
    - 異なるシード値での再生成を指示
+
+---
+
+## 4. 実装インターフェース (`src/agents/critic.py`)
+
+### 4.1 メソッド定義
+```python
+class CriticAgent:
+    async def evaluate_clip(
+        self,
+        cut: CutPlan,
+        video_path: Path,
+        retry_count: int = 0,
+        max_retries: int = 3,
+        use_mock: bool = False
+    ) -> CutEvaluation:
+        """フレーム抽出（FrameSampler）および Vision LLM (llava:7b) による品質検閲"""
+        ...
+
+    async def run_self_healing_loop(
+        self,
+        cut: CutPlan,
+        generator: MiniMaxGenerator,
+        max_retries: int = 3,
+        use_mock: bool = False
+    ) -> Tuple[Path, CutEvaluation]:
+        """合格（PASS）するまでプロンプトを補正して再生成を繰り返す自律修復ループ"""
+        ...
+```

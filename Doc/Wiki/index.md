@@ -11,9 +11,10 @@
 * **[ADR-002: MiniMax API ＋ ローカルOllamaのハイブリッド構成の決定](./ADR/ADR-002_minimax_and_ollama_hybrid.md)**
 
 ### 2. 障害対応 & トラブルシューティング知見 (Troubleshooting)
-* 今後の開発・運用で得られた普遍的教訓をここに追加します。
+* **[LLM出力JSONのゆらぎ吸収とPydanticモデル堅牢化](./Troubleshooting/llm_schema_robustness.md)**
 
 ### 3. 技術調査 & フィージビリティ (Research)
+* **[MiniMax API モデル体系・種類比較資料](./Research/minimax_models_comparison.md)**
 * **[MiniMax Video-01 API 技術仕様・制約まとめ](./Research/minimax_video_api_spec.md)**
 
 ---

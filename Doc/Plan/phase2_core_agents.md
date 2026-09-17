@@ -9,20 +9,20 @@
 ## タスクブレイクダウン
 
 ### 1. Director Agent の実装
-- [ ] **プロンプトテンプレート & スキーマ策定**:
+- [x] **プロンプトテンプレート & スキーマ策定**:
   - `src/agents/director.py` の作成
   - Ollama APIクライアント経由で `ProjectPlan` JSONを確実に出力させるシステムプロンプトの設計
-- [ ] **単体テスト & モック検証**:
-  - トレンドキーワード入力から正常なカット割りJSONが生成されるかのテスト
+- [x] **単体テスト & モック検証**:
+  - トレンドキーワード入力から正常なカット割りJSONが生成されるかのテスト (`tests/test_director.py`)
 
 ### 2. Generator Agent の実装
-- [ ] **MiniMax Video-01 APIクライアント**:
+- [x] **MiniMax Video-01 APIクライアント**:
   - `src/agents/generator.py` の作成
   - 非同期タスク登録 (`POST /v1/video_generation`)
   - ポーリング (`GET /v1/query/video_generation`) と指数バックオフ
   - ダウンロード処理（一時ディレクトリ `temp/clips/` への保存）
-- [ ] **APIレートリミット & Semaphore制御**:
-  - 同時生成リクエスト数の制限ロジック
+- [x] **APIレートリミット & Semaphore制御**:
+  - 同時生成リクエスト数の制限ロジック (asyncio.Semaphore)
 
 ### 3. モック / オフライン検証モードの導入
-- [ ] APIキー未設定時やテスト環境で動画生成をシミュレートするモッククライアントの実装
+- [x] APIキー未設定時やテスト環境で動画生成をシミュレートするモッククライアントの実装 (`tests/test_generator.py`)

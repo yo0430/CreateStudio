@@ -12,6 +12,7 @@
 
 ### 2. 障害対応 & トラブルシューティング知見 (Troubleshooting)
 * **[LLM出力JSONのゆらぎ吸収とPydanticモデル堅牢化](./Troubleshooting/llm_schema_robustness.md)**
+* **[Vision LLM (LLaVA) へのフレーム画像入力と有効バイナリ検証](./Troubleshooting/vision_llm_input_format.md)**
 
 ### 3. 技術調査 & フィージビリティ (Research)
 * **[MiniMax API モデル体系・種類比較資料](./Research/minimax_models_comparison.md)**

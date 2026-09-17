@@ -9,8 +9,8 @@
 | フェーズ | マイルストーン | ステータス | 開始日 | 完了予定 / 完了日 | 担当 / 主力スキル |
 | :--- | :--- | :---: | :---: | :---: | :--- |
 | **Phase 1** | **プロジェクト初期立ち上げ・サブモジュール整備** | **✅ 完了** | 2026-09-18 | 2026-09-18 | `version_control`, `structural_first` |
-| **Phase 2** | **LLMwiki＋Spec駆動ドキュメント管理基盤の構築** | **🔄 進行中** | 2026-09-18 | 2026-09-18 | `llm_wiki`, `structural_first` |
-| **Phase 3** | **Director & Generator Agent コアクライアント実装** | **⏳ 未着手** | - | - | `director_agent`, `generator_agent` |
+| **Phase 2** | **LLMwiki＋Spec駆動ドキュメント管理基盤の構築** | **✅ 完了** | 2026-09-18 | 2026-09-18 | `llm_wiki`, `structural_first` |
+| **Phase 3** | **Director & Generator Agent コアクライアント実装** | **🔄 進行中** | 2026-09-18 | - | `director_agent`, `generator_agent` |
 | **Phase 4** | **Critic Agent フレームサンプリング & 自己修復ループ** | **⏳ 未着手** | - | - | `critic_agent`, `fact_checker` |
 | **Phase 5** | **Assembler & ポスプロ（結合・テロップ・BGM合成）** | **⏳ 未着手** | - | - | `assembler_agent`, `coding_standards` |
 | **Phase 6** | **エンドツーエンド自律実行パイプライン検証 & 投稿** | **⏳ 未着手** | - | - | `ops_workflow`, `post_agent` |

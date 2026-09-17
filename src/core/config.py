@@ -15,8 +15,8 @@ class Settings:
     MINIMAX_BASE_URL: str = os.getenv("MINIMAX_BASE_URL", "https://api.minimax.chat/v1")
 
     OLLAMA_BASE_URL: str = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
-    OLLAMA_MODEL_DIRECTOR: str = os.getenv("OLLAMA_MODEL_DIRECTOR", "llama3.1:latest")
-    OLLAMA_MODEL_CRITIC: str = os.getenv("OLLAMA_MODEL_CRITIC", "llava:latest")
+    OLLAMA_MODEL_DIRECTOR: str = os.getenv("OLLAMA_MODEL_DIRECTOR", "llama3.1:8b")
+    OLLAMA_MODEL_CRITIC: str = os.getenv("OLLAMA_MODEL_CRITIC", "llava:7b")
 
     FFMPEG_PATH: str = os.getenv("FFMPEG_PATH", "ffmpeg")
 

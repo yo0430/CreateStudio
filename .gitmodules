@@ -1,0 +1,4 @@
+[submodule ".agent"]
+	path = .agent
+	url = https://github.com/yo0430/agent-core.git
+	branch = Projects/CreateStudio

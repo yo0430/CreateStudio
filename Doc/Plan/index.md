@@ -13,13 +13,14 @@
 | **Phase 3** | **Director & Generator Agent コアクライアント実装** | **✅ 完了** | 2026-09-18 | 2026-09-18 | `director_agent`, `generator_agent` |
 | **Phase 4** | **Critic Agent フレームサンプリング & 自己修復ループ** | **✅ 完了** | 2026-09-18 | 2026-09-18 | `critic_agent`, `fact_checker` |
 | **Phase 5** | **Assembler & ポスプロ（結合・テロップ・BGM合成）** | **✅ 完了** | 2026-09-18 | 2026-09-18 | `assembler_agent`, `coding_standards` |
-| **Phase 6** | **エンドツーエンド自律実行パイプライン検証 & 投稿** | **⏳ 未着手** | - | - | `ops_workflow`, `post_agent` |
+| **Phase 6** | **エンドツーエンド自律実行パイプライン検証 & 投稿** | **✅ 完了** | 2026-09-18 | 2026-09-18 | `ops_workflow`, `post_agent` |
 
 ---
 
 ## 📑 フェーズ別詳細計画・記録
 * 👉 **[Phase 1: 初期立ち上げ・サブモジュール整備 (実績)](./phase1_initial_setup.md)**
 * 👉 **[Phase 2: コアエージェント実装計画 (詳細計画)](./phase2_core_agents.md)**
+* 👉 **[Phase 6: エンドツーエンド自律実行パイプライン](./phase6_pipeline_integration.md)**
 
 ---
 

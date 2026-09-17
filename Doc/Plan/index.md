@@ -12,7 +12,7 @@
 | **Phase 2** | **LLMwiki＋Spec駆動ドキュメント管理基盤の構築** | **✅ 完了** | 2026-09-18 | 2026-09-18 | `llm_wiki`, `structural_first` |
 | **Phase 3** | **Director & Generator Agent コアクライアント実装** | **✅ 完了** | 2026-09-18 | 2026-09-18 | `director_agent`, `generator_agent` |
 | **Phase 4** | **Critic Agent フレームサンプリング & 自己修復ループ** | **✅ 完了** | 2026-09-18 | 2026-09-18 | `critic_agent`, `fact_checker` |
-| **Phase 5** | **Assembler & ポスプロ（結合・テロップ・BGM合成）** | **⏳ 未着手** | - | - | `assembler_agent`, `coding_standards` |
+| **Phase 5** | **Assembler & ポスプロ（結合・テロップ・BGM合成）** | **✅ 完了** | 2026-09-18 | 2026-09-18 | `assembler_agent`, `coding_standards` |
 | **Phase 6** | **エンドツーエンド自律実行パイプライン検証 & 投稿** | **⏳ 未着手** | - | - | `ops_workflow`, `post_agent` |
 
 ---

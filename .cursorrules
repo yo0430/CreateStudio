@@ -1,0 +1,11 @@
+# Cursor Rules — Single Source of Truth (SSOT) Pointer for CreateStudio
+
+This repository adheres to the Linux Foundation / AAIF AGENTS.md standard.
+AGENTS.md at the repository root is the Single Source of Truth (SSOT).
+
+Before generating code, planning changes, or answering questions:
+1. Always consult and strictly adhere to `AGENTS.md` at the project root.
+2. Respect the XML boundaries: <project_metadata>, <system_architecture>, <precedence_policy>, <development_standards>, <safety_guardrails>, and <restricted_skills_registry>.
+3. Never commit directly to `main` branch. Always use dedicated feature branches.
+4. Stop debugging loops after at most 3 failed attempts and report findings.
+5. All conversational responses and explanations MUST be in Japanese.
